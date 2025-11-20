@@ -10,4 +10,4 @@ jobs:
      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-     - run: node find-prime.js   # ← change to your actual filename
+     - run: find-prime.js   # ← change to your actual filename
