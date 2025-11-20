@@ -1,0 +1,13 @@
+name: test my prime function
+
+on:[push, pull_request]
+
+jobs:
+  test_job:
+    runs-on:ubuntu-test
+    steps:
+     - uses:actions/checkout@v4
+     - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+     - run: node find-prime.js   # ← change to your actual filename
