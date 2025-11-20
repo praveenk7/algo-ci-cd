@@ -1,6 +1,6 @@
 name: test my prime function
 
-on:[push, pull_request]
+on: [push, pull_request]
 
 jobs:
   test_job:
