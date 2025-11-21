@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
+    #- run: npm ci
+    - run: npm install #Replace npm ci with npm install in the workflow (this command doesn’t need a lockfile)
     - run: npm run build --if-present
     - run: npm test
